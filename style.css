@@ -16,7 +16,7 @@ body {
 
 .top .boutons {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
+    font-size: 1.5vw;
     background-color: rgb(130, 55, 35);
     color: white;
     padding: 8px 20px;
@@ -52,51 +52,62 @@ body {
     background-repeat: repeat-y;
 }
 
-.panneau1 {
+.panneau1, .panneau2, .panneau3 {
     position: absolute;
-    width: 460px;
+    width: 45%;
     top: 200px;
-    left: 0px;
+}
+
+.panneau1 img, .panneau2 img, .panneau3 img {
+    width: 100%;
+    height: auto;
 }
 
 .panneau2 {
-    position: absolute;
-    width: 460px;
+    right: 0;
     top: 400px;
-    right: 0px; 
 }
 
 .panneau3 {
-    position: absolute;
-    width: 460px;
     top: 600px;
-    left: 0px;
-
 }
 
-.textepan1 {
+.panneau1 h1, .panneau3 h1 {
+    font-size: 1.5vw;
     position: absolute;
-    top: 20px;
-    left: 100px;
-    color: white;
-}
-
-.textepan2 {
-    position: absolute;
-    top: 20px;
     left: 20px;
-    color: white;
-}
-
-.textepan3 {
-    position: absolute;
     top: 20px;
-    left: 100px;
     color: white;
+    line-height: 1.4;
 }
 
-h1 {
-    font-size: 15px;
+.panneau2 h1 {
+    font-size: 1.5vw;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: white;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .top .boutons {
+        font-size: 4vw;
+    }
+
+    h1 {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .top .boutons {
+        font-size: 5vw;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
 }
 
 .bouton_vers_haut {
