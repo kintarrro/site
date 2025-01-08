@@ -43,13 +43,12 @@ body {
 }
 
 .informations {
-    position: relative;
+	position: relative;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 20px;   
     background-image: url('Images/dirt.webp');
-    background-repeat: repeat-y;
 }
 
 .panneau1, .panneau2, .panneau3 {
@@ -72,7 +71,7 @@ body {
     top: 600px;
 }
 
-.panneau1 h1, .panneau3 h1 {
+.panneau1 strong, .panneau3 strong {
     font-size: 1.5vw;
     position: absolute;
     left: 20px;
@@ -81,13 +80,79 @@ body {
     line-height: 1.4;
 }
 
-.panneau2 h1 {
+.panneau2 strong {
     font-size: 1.5vw;
     position: absolute;
     left: 20px;
     top: 20px;
     color: white;
     line-height: 1.4;
+}
+
+.panneau1_1 {
+    position: absolute;
+    top: 100px;
+}
+
+.texte1 {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    color: white;
+}
+.video1 {
+    position: absolute;
+    left: 500px;
+    top: 0px;
+}
+.panneau2_1 {
+    position: absolute;
+    top: 400px;
+    right: 200px;
+    
+}
+
+.texte2 {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    color: white;
+}
+.video2 {
+    position: absolute;
+    left: 500px;
+    top: 0px;
+}
+.panneau3_1 {
+    position: absolute;
+    top: 700px;
+}
+.texte3 {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    color: white;
+}
+.video3 {
+    position: absolute;
+    left: 500px;
+    top: 0px;
+}
+.panneau4 {
+    position: absolute;
+    top: 1000px;
+    right: 200px;
+}
+.texte4 {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    color: white;
+}
+.video4 {
+    position: absolute;
+    left: 500px;
+    top: 0px;
 }
 
 @media (max-width: 768px) {
@@ -95,7 +160,7 @@ body {
         font-size: 4vw;
     }
 
-    h1 {
+    .panneau1 strong, .panneau2 strong, .panneau3 strong {
         font-size: 4vw;
     }
 }
@@ -105,7 +170,7 @@ body {
         font-size: 5vw;
     }
 
-    h1 {
+    .panneau1 strong, .panneau2 strong, .panneau3 strong {
         font-size: 5vw;
     }
 }
@@ -129,4 +194,50 @@ body {
 
 .bouton_vers_haut:hover {
     opacity: 0.8;
+}
+
+.serveur {
+    background-image: url('Images/dirt.webp');
+}
+
+.serveur h2, .serveur strong, .serveur p, .serveur i, .serveur h3 {
+    color: white;
+}
+
+a:link {
+	color: blue;
+	background: white;
+}
+
+a:hover {
+    background: yellowgreen ;
+}
+
+a:visited {
+    color: magenta;
+}
+
+a:active {
+    color:white;
+}
+
+#contact_mail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    margin: 0;
+}
+
+#contact_mail p {
+    margin: 10px 0;
+}
+
+#contact_mail input, #contact_mail textarea {
+    padding: 10px;
+    margin-top: 5px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
